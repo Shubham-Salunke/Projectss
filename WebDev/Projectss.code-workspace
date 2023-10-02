@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "E:/Projectss"
+		},
+		{
+			"path": "E:/Study_Programs"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Projectss"
+	}
+}
