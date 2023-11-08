@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertical Tabs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Vertical Tabs</h1>
+    <p>Click on the buttons inside the tabbed menu:</p>
+    <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'Mumbai')" id="defaultOpen">Mumbai</button>
+        <button class="tablinks" onclick="openCity(event, 'Delhi')">Delhi</button>
+        <button class="tablinks" onclick="openCity(event, 'Chennai')">Chennai</button>
+      </div>
+
+    <div id="Mumbai" class="tabcontent">
+        <h3>Mumbai</h3>
+        <p>Mumbai is the capital of Maharashtra.</p>
+    </div>
+
+    <div id="Delhi" class="tabcontent">
+        <h3>Delhi</h3>
+        <p>New Delhi is the capital of Delhi.</p>
+    </div>
+
+    <div id="Chennai" class="tabcontent">
+        <h3>Chennai</h3>
+        <p>Chennai is the capital of Tamil Nadu.</p>
+    </div>
+
+    <script>
+        function openCity(evt, cityName) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(cityName).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+        
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+        </script>
+</body>
+</html>
