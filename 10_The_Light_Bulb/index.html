@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulb Light</title>
+    <style>
+        button{
+            background-color: black;
+            color:aliceblue;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h2>The Bulb Light</h2>
+
+    <button type="button"
+    onclick='document.getElementById("myImage").src="pic_bulbon.gif"'>Turn on the Light.</button>
+    
+    <img id="myImage" src="pic_bulboff.gif" style="width: 100px;">
+    
+    <button type="button"
+    onclick='document.getElementById("myImage").src="pic_bulboff.gif"'>Turn off the Light</button>
+</body>
+</html>
