@@ -30,6 +30,9 @@
     .arrow {
       display: none;
     }
+    .section__text{
+      margin-top: 240px;
+    }
     section,
     .section-container {
       height: fit-content;

@@ -27,7 +27,6 @@ a,
 }
 
 /* DESKTOP NAV */
-
 nav,
 .nav-links {
   display: flex;
@@ -60,10 +59,12 @@ a:hover {
 
 .logo {
   font-size: 2rem;
+  color: red;
+  font-weight: 700;
 }
 
 .logo:hover {
-  cursor: default;
+  cursor: pointer;
 }
 
 /* HAMBURGER MENU */
@@ -171,9 +172,14 @@ section {
 
 .section__pic-container {
   display: flex;
-  height: 400px;
   width: 400px;
+  height: 400px;
   margin: auto 0;
+}
+#profile .section__pic-container img{
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
 }
 
 .section__text {
@@ -227,11 +233,13 @@ section {
   padding: 1rem;
   width: 8rem;
   border-radius: 2rem;
+  
 }
 
-.btn-color-1,
+.btn-color-1, 
 .btn-color-2 {
   border: rgb(53, 53, 53) 0.1rem solid;
+ 
 }
 
 .btn-color-1:hover,
@@ -239,7 +247,7 @@ section {
   cursor: pointer;
 }
 
-.btn-color-1,
+.btn-color-1:hover,
 .btn-color-2:hover {
   background: rgb(53, 53, 53);
   color: white;
